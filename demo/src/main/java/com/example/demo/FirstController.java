@@ -1,10 +1,10 @@
 package com.example.demo;
 
-import java.sql.SQLException;
+
 import java.util.List;
 import java.util.Map;
 
-import javax.sql.DataSource;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -24,26 +24,7 @@ import oracle.jdbc.pool.OracleDataSource;
 public class FirstController {
 	
 	
-	@Value("${spring.datasource.url}")
-    private String url;
-
-    @Value("${spring.datasource.username}")
-    private String username;
-
-    @Value("${spring.datasource.password}")
-    private String password;
-    
-   
-
-    @Bean
-    public DataSource dataSource() throws SQLException {
-        OracleDataSource dataSource = new OracleDataSource();
-        dataSource.setURL(url);
-        dataSource.setUser(username);
-        dataSource.setPassword(password);
-        return dataSource;
-    }
-    
+	
   
 
 }
