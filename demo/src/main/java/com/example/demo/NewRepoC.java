@@ -10,13 +10,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class NewRepoC {
 	
-	    @Autowired
-	    private JdbcTemplate jb;
-	    
-	    public List<Map<String, Object>> getAlltable()
-	    {
-	    	List<Map<String, Object>> newList=jb.queryForList("select * from corana");
-	    	return newList;
-	    }
+	  
 
 }
